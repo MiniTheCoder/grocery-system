@@ -51,11 +51,11 @@ int main(){
 		
 		if(price > 500){
 			float discount = price * 0.10 ;
-			printf("Discount applied on this item: Rs .%2f\n",discount);
+			printf("Discount applied on this item: Rs. %.2f\n",discount);
 			price -= discount;
 		}
 		total += price ;
-		printf("Item: %s , Quantity: %d, Price: Rs .%2f\n", item , quantity , price);
+		printf("Item: %s , Quantity: %d, Price: Rs. %.2f\n", item , quantity , price);
 	}
 	printf("Total bill amount: Rs .%2f\n",total);
 	
